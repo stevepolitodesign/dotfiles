@@ -29,15 +29,15 @@ set noswapfile
 set nowb
 
 " Indentation settings
-set ai                                 " Auto indent
-set si                                 " Smart indent
-set wrap                               " Wrap lines
+set ai                                  " Auto indent
+set si                                  " Smart indent
+set wrap                                " Wrap lines
 
 " Visual Settings
-set noerrorbells                      " No error sounds
-set novisualbell                      " No visual bell
-set t_vb=                             " No terminal bell
-set laststatus=2                      " Always show status line
+set noerrorbells                        " No error sounds
+set novisualbell                        " No visual bell
+set t_vb=                               " No terminal bell
+set laststatus=2                        " Always show status line
 
 " ===================
 " Plugin Management
@@ -98,13 +98,17 @@ colorscheme dracula
 " Key Mappings
 " ===================
 
-" General
-nnoremap <Leader>w :w!<cr>                     " Fast save
-vnoremap <leader>c "+y                         " Copy to system clipboard
+" Fast save
+nnoremap <Leader>w :w!<cr>
 
-" FZF
-nnoremap <c-p> :Files<cr>                      " Fuzzy file search
-nnoremap \ :Ag<SPACE>                          " Silver searcher
+" Copy to system clipboard
+vnoremap <leader>c "+y
+
+" Fuzzy file search
+nnoremap <c-p> :Files<cr>
+
+" Siler searcher
+nnoremap \ :Ag<SPACE>
 
 " Window Movement
 nnoremap <C-j> <C-w>j
@@ -112,8 +116,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" Buffer Navigation
-nnoremap <Leader><Leader> <C-^>               " Switch between last two files
+" Switch between last two files
+nnoremap <Leader><Leader> <C-^>
 
 " Tab Management
 map <leader>tn :tabnew<cr>
@@ -143,6 +147,3 @@ augroup AutoReloadChanged
     autocmd!
     autocmd FocusGained,BufEnter * silent! checktime
 augroup END
-
-" Enable matchit
-runtime macros/matchit.vim
