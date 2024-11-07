@@ -14,7 +14,7 @@
   st = status
 [core]
   autocrlf = input
-	excludesFile = ~/.gitignore
+  excludesFile = ~/.gitignore
 [merge]
   ff = only
 [commit]
@@ -23,10 +23,8 @@
   prune = true
 [rebase]
   autosquash = true
-[include]
-  path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
 [user]
-	name = Steve Polito
-	email = stevepolito@hey.com
+  name = Steve Polito
+  email = stevepolito@hey.com

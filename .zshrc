@@ -2,7 +2,7 @@
 
 export VISUAL=vim
 export EDITOR=$VISUAL
- 
+
 # ==== Aliases ====
 
 # Unix
@@ -51,7 +51,7 @@ fzf-history-widget() {
   CURSOR=$#BUFFER
 }
 zle -N fzf-history-widget
-bindkey '^R' fzf-history-widget 
+bindkey '^R' fzf-history-widget
 
 # git
 g() {
