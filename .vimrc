@@ -57,6 +57,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'ervandew/supertab'
 Plug 'vim-test/vim-test'
+Plug 'pbrisbin/vim-mkdir'
 
 " Git Integration
 Plug 'tpope/vim-fugitive'
