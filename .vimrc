@@ -141,6 +141,9 @@ nnoremap <leader>ct :!ctags -R .<CR>
 " Spell Checking
 map <leader>ss :setlocal spell!<cr>
 
+" Scratchpad
+map <leader>x :e ~/scratchpad.md<cr>
+
 " ===================
 " Auto Commands
 " ===================
