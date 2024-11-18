@@ -66,6 +66,9 @@ Plug 'tpope/vim-rhubarb'
 " Ruby/Rails
 Plug 'tpope/vim-rails'
 
+" JavaScript
+Plug 'pangloss/vim-javascript'
+
 " Text Manipulation
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
