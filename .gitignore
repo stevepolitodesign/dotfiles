@@ -1,1 +1,5 @@
 /tags
+.DS_Store
+.bundle
+.byebug_history
+.env
