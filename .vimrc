@@ -22,6 +22,10 @@ set numberwidth=5                       " Width of line number column
 set ruler                               " Show cursor position
 set tw=80                               " Text width of 80 characters
 set wildmenu                            " Enhanced command-line completion
+set tabstop=2                           " Softtabs, 2 spaces
+set shiftwidth=2
+set shiftround
+set expandtab
 
 " Disable swap and backup files
 set nobackup
