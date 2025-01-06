@@ -62,6 +62,7 @@ Plug 'dense-analysis/ale'
 Plug 'ervandew/supertab'
 Plug 'vim-test/vim-test'
 Plug 'pbrisbin/vim-mkdir'
+Plug 'preservim/nerdtree'
 
 " Git Integration
 Plug 'tpope/vim-fugitive'
@@ -153,6 +154,13 @@ map <leader>ss :setlocal spell!<cr>
 
 " Scratchpad
 map <leader>x :e ~/scratchpad.md<cr>
+
+" NERDTree
+" https://github.com/preservim/nerdtree?tab=readme-ov-file#how-can-i-map-a-specific-key-or-shortcut-to-open-nerdtree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " ===================
 " Auto Commands
