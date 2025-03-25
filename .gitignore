@@ -3,3 +3,4 @@
 .bundle
 .byebug_history
 .env
+lib/scratchpad.rb
