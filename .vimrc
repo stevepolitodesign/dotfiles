@@ -145,6 +145,9 @@ nnoremap <silent> <Leader>l :TestLast<CR>
 nnoremap <silent> <Leader>a :TestSuite<CR>
 nnoremap <silent> <Leader>gt :TestVisit<CR>
 
+" Rails Scratchpad
+nnoremap <silent> <Leader>xx :!bin/rails runner lib/scratchpad.rb<CR>
+
 " CTags
 set tags=./tags;/
 nnoremap <leader>ct :!ctags -R .<CR>
