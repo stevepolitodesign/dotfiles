@@ -1,10 +1,28 @@
 # Steve Polito's dotfiles
 
+## Prerequisites
+
+### Vim related
+
+- https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
+- https://formulae.brew.sh/formula/ctags#default
+- https://formulae.brew.sh/formula/fzf#default
+
+## Terminal related
+
+- https://starship.rs
+- https://draculatheme.com/iterm
+- https://formulae.brew.sh/cask/font-hack-nerd-font#default
+
+### Modifiers
+
+Map <kbd>CAPS</kbd> to <kbd>ESC</kbd>
+
 ## Installation
 
 The following is extracted from [this article][].
 
-1. Prior to the installation make sure you have committed the alias to `.vshrc` 
+1. Prior to the installation make sure you have committed the alias to `.zshrc`
 
     ```
     alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -54,18 +72,3 @@ config push
 
 [this article]: https://www.atlassian.com/git/tutorials/dotfiles
 [bare repository]: https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server.html#_getting_git_on_a_server
-
-## Prerequisites
-
-- https://formulae.brew.sh/formula/ctags#default
-- https://formulae.brew.sh/formula/fzf#default
-
-## Terminal
-
-- https://starship.rs
-- https://draculatheme.com/iterm
-- https://formulae.brew.sh/cask/font-hack-nerd-font#default
-
-## Modifiers
-
-Map <kbd>CAPS</kbd> to <kbd>ESC</kbd>
