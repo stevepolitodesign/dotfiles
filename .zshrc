@@ -31,7 +31,7 @@ alias gup="git fetch origin;git rebase origin/main"
 alias gcl="git log -1 --pretty=%B | pbcopy"
 
 # https://www.atlassian.com/git/tutorials/dotfiles
-alias config='/usr/bin/git --git-dir=/Users/polito/.dotfiles/ --work-tree=/Users/polito'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # ==== Key Bindings ====
 
