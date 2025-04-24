@@ -5,6 +5,7 @@
 ### Vim related
 
 - https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
+- https://formulae.brew.sh/formula/the_silver_searcher
 - https://formulae.brew.sh/formula/ctags#default
 - https://formulae.brew.sh/formula/fzf#default
 
