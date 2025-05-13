@@ -27,6 +27,10 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" Ensure JavaScript files load
+" https://stackoverflow.com/questions/69145357/vim-almost-hangs-with-100-line-typescript-file
+set re=2
+
 " Disable swap and backup files
 set nobackup
 set noswapfile
@@ -73,6 +77,8 @@ Plug 'tpope/vim-rails'
 
 " JavaScript
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " Text Manipulation
 Plug 'tpope/vim-commentary'
