@@ -68,5 +68,5 @@ g() {
 # Starship
 eval "$(starship init zsh)"
 
-# asdf
-. "$HOME/.asdf/asdf.sh"
+# Mise
+eval "$(mise activate zsh)"
