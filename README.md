@@ -18,10 +18,11 @@
     brew install openssl@3 libyaml gmp rust gh mise
     ```
 
-3. Install Ruby globally with Mise
+3. Install Ruby and Node globally with Mise
 
     ```
-    mise use -g ruby@3
+    mise use -g node@latest
+    mise use -g ruby@latest
     ```
 
 ### Vim related
