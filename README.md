@@ -31,7 +31,7 @@
 - https://formulae.brew.sh/formula/ctags#default
 - https://formulae.brew.sh/formula/fzf#default
 
-## Terminal related
+### Terminal related
 
 - https://starship.rs
 - https://draculatheme.com/iterm
