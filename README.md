@@ -2,6 +2,28 @@
 
 ## Prerequisites
 
+### System related
+
+1. Install Xcode Command Line Tools
+
+    ```
+    xcode-select --install
+    ```
+
+2. Install [Homebrew][homebrew] and dependencies
+
+    ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    brew install openssl@3 libyaml gmp rust gh mise
+    ```
+
+3. Install Ruby globally with Mise
+
+    ```
+    mise use -g ruby@3
+    ```
+
 ### Vim related
 
 - https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
@@ -71,5 +93,20 @@ config commit -m "Add bashrc"
 config push
 ```
 
+If you run into the following error, follow these steps:
+
+```
+Username for 'https://github.com': <username>
+Password for 'https://stevepolito@hey.com@github.com': <password>
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/stevepolitodesign/dotfiles.git/'
+```
+
+1. Create a [Personal access token (classic)][token].
+2. When prompted for credentials, enter your username and token.
+
 [this article]: https://www.atlassian.com/git/tutorials/dotfiles
 [bare repository]: https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server.html#_getting_git_on_a_server
+[homebrew]: https://brew.sh
+[token]: https://github.com/settings/tokens
