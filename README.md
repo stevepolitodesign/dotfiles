@@ -15,7 +15,7 @@
     ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    brew install openssl@3 libyaml gmp rust gh mise
+    brew install openssl@3 libyaml gmp rust gh mise fzf bat ripgrep the_silver_searcher perl universal-ctags
     ```
 
 3. Install Ruby and Node globally with Mise
@@ -33,16 +33,16 @@
 
 ### Vim related
 
-- https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
-- https://formulae.brew.sh/formula/the_silver_searcher
-- https://formulae.brew.sh/formula/ctags#default
-- https://formulae.brew.sh/formula/fzf#default
+-   https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
+-   https://formulae.brew.sh/formula/the_silver_searcher
+-   https://formulae.brew.sh/formula/ctags#default
+-   https://formulae.brew.sh/formula/fzf#default
 
 ### Terminal related
 
-- https://starship.rs
-- https://draculatheme.com/iterm
-- https://formulae.brew.sh/cask/font-hack-nerd-font#default
+-   https://starship.rs
+-   https://draculatheme.com/iterm
+-   https://formulae.brew.sh/cask/font-hack-nerd-font#default
 
 ### Modifiers
 
@@ -61,9 +61,9 @@ The following is extracted from [this article][].
 2. And that your source repository ignores the folder where you'll clone it, so
    that you don't create weird recursion problems:
 
-   ```
-   echo ".dotfiles" >> .gitignore
-   ```
+    ```
+    echo ".dotfiles" >> .gitignore
+    ```
 
 3. Now clone your dotfiles into a [bare repository][] in `.dotfiles` in your `$HOME`:
 
