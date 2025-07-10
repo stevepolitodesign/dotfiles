@@ -25,6 +25,12 @@
     mise use -g ruby@latest
     ```
 
+4. Install [yarn][yarn]
+
+    ```
+    npm install -g corepack
+    ```
+
 ### Vim related
 
 - https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
@@ -111,3 +117,4 @@ fatal: Authentication failed for 'https://github.com/stevepolitodesign/dotfiles.
 [bare repository]: https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server.html#_getting_git_on_a_server
 [homebrew]: https://brew.sh
 [token]: https://github.com/settings/tokens
+[yarn]: https://yarnpkg.com/getting-started/install

@@ -174,7 +174,17 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " ===================
 " Auto Commands
 " ===================
+"
+" Automatically check if files have changed outside of Vim whenever you switch
+" to Vim or enter a buffer. This helps prevent editing outdated files by
+" silently reloading them if they've been modified elsewhere.
 augroup AutoReloadChanged
     autocmd!
     autocmd FocusGained,BufEnter * silent! checktime
+augroup END
+
+" Prettier format on save
+augroup PrettierFormat
+  autocmd!
+  autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.md PrettierAsync
 augroup END
