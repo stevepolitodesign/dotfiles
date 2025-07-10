@@ -123,7 +123,7 @@ nnoremap <Leader>w :w!<cr>
 vnoremap <leader>c "+y
 
 " Fuzzy file search
-nnoremap <c-p> :Files<cr>
+nnoremap <c-p> :GFiles<cr>
 
 " Siler searcher
 nnoremap \ :Ag<SPACE>
