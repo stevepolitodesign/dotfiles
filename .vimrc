@@ -131,7 +131,7 @@ vnoremap <leader>c "+y
 " Fuzzy file search
 nnoremap <c-p> :GFiles<cr>
 
-" Siler searcher
+" Silent searcher
 nnoremap \ :Ag<SPACE>
 
 " Window Movement
