@@ -79,6 +79,7 @@ Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Text Manipulation
 Plug 'tpope/vim-commentary'

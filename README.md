@@ -37,6 +37,11 @@
 -   https://formulae.brew.sh/formula/the_silver_searcher
 -   https://formulae.brew.sh/formula/ctags#default
 -   https://formulae.brew.sh/formula/fzf#default
+-   https://github.com/neoclide/coc.nvim
+
+    ```
+    :CocInstall coc-json coc-tsserver
+    ```
 
 ### Terminal related
 
