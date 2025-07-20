@@ -49,6 +49,11 @@
 -   https://draculatheme.com/iterm
 -   https://formulae.brew.sh/cask/font-hack-nerd-font#default
 
+In order to copy from the terminal during a Vim session in Terminal mode, you'll
+need to disable "Mouse Reporting" in iTerm2.
+
+Session -> Terminal State -> Mouse Reporting
+
 ### Modifiers
 
 Map <kbd>CAPS</kbd> to <kbd>ESC</kbd>
