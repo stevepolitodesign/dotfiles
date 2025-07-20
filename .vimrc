@@ -111,7 +111,7 @@ let test#strategy = "vimterminal"
 " FZF Configuration
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
-    let $FZF_DEFAULT_COMMAND = 'ag --literal --files-with-matches --nocolor --hidden -g ""'
+    let $FZF_DEFAULT_COMMAND = 'ag --literal --files-with-matches --nocolor --hidden --ignore .git -g ""'
 endif
 
 " Coc Configuration
@@ -142,7 +142,7 @@ nnoremap <Leader>w :w!<cr>
 vnoremap <leader>c "+y
 
 " Fuzzy file search
-nnoremap <c-p> :GFiles<cr>
+nnoremap <c-p> :Files<cr>
 
 " Silent searcher
 nnoremap \ :Ag<SPACE>
