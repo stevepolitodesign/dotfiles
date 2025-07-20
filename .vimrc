@@ -173,6 +173,9 @@ nnoremap <silent> <Leader>gt :TestVisit<CR>
 " Rails Scratchpad
 nnoremap <silent> <Leader>xx :!bin/rails runner lib/scratchpad.rb<CR>
 
+" Execute current Ruby file
+nnoremap <leader>r :w<CR>:!ruby %<CR>
+
 " CTags
 set tags=./tags;/
 nnoremap <leader>ct :!ctags -R .<CR>
