@@ -100,8 +100,9 @@ call plug#end()
 " ALE Configuration
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'ruby': ['rubocop'],
+\   'ruby': ['standardrb'],
 \}
+let g:ale_linters = {'ruby': ['standardrb']}
 
 let g:ale_fix_on_save = 1
 
