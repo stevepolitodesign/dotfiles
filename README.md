@@ -122,9 +122,11 @@ fatal: Authentication failed for 'https://github.com/stevepolitodesign/dotfiles.
 
 1. Create a [Personal access token (classic)][token].
 2. When prompted for credentials, enter your username and token.
+3. You'll likely need to [add the SSH key to the ssh-agent][ssh-agent]
 
 [this article]: https://www.atlassian.com/git/tutorials/dotfiles
 [bare repository]: https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server.html#_getting_git_on_a_server
 [homebrew]: https://brew.sh
 [token]: https://github.com/settings/tokens
 [yarn]: https://yarnpkg.com/getting-started/install
+[ssh-agent]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
