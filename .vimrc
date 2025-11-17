@@ -104,8 +104,6 @@ let g:ale_fixers = {
 \}
 let g:ale_linters = {'ruby': ['standardrb']}
 
-let g:ale_fix_on_save = 1
-
 " vim-test Configuration
 let test#strategy = "vimterminal"
 
@@ -207,10 +205,4 @@ map <leader>/ :terminal<CR>
 augroup AutoReloadChanged
     autocmd!
     autocmd FocusGained,BufEnter * silent! checktime
-augroup END
-
-" Prettier format on save
-augroup PrettierFormat
-  autocmd!
-  autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.md PrettierAsync
 augroup END
