@@ -98,11 +98,39 @@ call plug#end()
 " ===================
 
 " ALE Configuration
+function! SetRubyLinter()
+  " Look for .rubocop.yml in current directory or parent directories
+  let rubocop_config = findfile('.rubocop.yml', '.;')
+
+  if !empty(rubocop_config)
+    " Project has RuboCop config - use RuboCop
+    let g:ale_linters = {'ruby': ['rubocop']}
+    let g:ale_fixers = {
+    \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \   'ruby': ['rubocop'],
+    \}
+  else
+    " No RuboCop config - use StandardRB
+    let g:ale_linters = {'ruby': ['standardrb']}
+    let g:ale_fixers = {
+    \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \   'ruby': ['standardrb'],
+    \}
+  endif
+endfunction
+
+" Run detection when opening Ruby files
+augroup RubyLinterDetection
+  autocmd!
+  autocmd BufRead,BufNewFile *.rb,*.rake,Gemfile call SetRubyLinter()
+augroup END
+
+" Set initial default
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'ruby': ['standardrb'],
+\   'ruby': ['rubocop'],
 \}
-let g:ale_linters = {'ruby': ['standardrb']}
+let g:ale_linters = {'ruby': ['rubocop']}
 
 " vim-test Configuration
 let test#strategy = "vimterminal"
