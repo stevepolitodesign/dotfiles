@@ -15,7 +15,7 @@
     ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    brew install openssl@3 libyaml gmp rust gh mise fzf bat ripgrep the_silver_searcher perl universal-ctags
+    brew install openssl@3 libyaml gmp rust gh mise fzf bat ripgrep the_silver_searcher perl
     ```
 
 3. Install Ruby and Node globally with Mise
@@ -35,12 +35,58 @@
 
 -   https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
 -   https://formulae.brew.sh/formula/the_silver_searcher
--   https://formulae.brew.sh/formula/ctags#default
 -   https://formulae.brew.sh/formula/fzf#default
 -   https://github.com/neoclide/coc.nvim
+-   https://github.com/neoclide/coc.nvim/wiki/Language-servers#using-shopifyruby-lsp
 
     ```
+    # Install Ruby language server
+    gem install ruby-lsp
+
+    # Install JSON, JavaScript and Typescript language servers
     :CocInstall coc-json coc-tsserver
+    ```
+
+    Then run `:Cocconfig` and paste in the following:
+
+    ```json
+    "languageserver": {
+        "ruby-lsp": {
+            "command": "ruby-lsp",
+            "initializationOptions": {
+              "enabledFeatures": {
+                "codeActions": true,
+                "codeLens": true,
+                "completion": true,
+                "definition": true,
+                "diagnostics": true,
+                "documentHighlights": true,
+                "documentLink": true,
+                "documentSymbols": true,
+                "foldingRanges": true,
+                "formatting": true,
+                "hover": true,
+                "inlayHint": true,
+                "onTypeFormatting": true,
+                "selectionRanges": true,
+                "semanticHighlighting": true,
+                "signatureHelp": true,
+                "typeHierarchy": true,
+                "workspaceSymbol": true
+            },
+            "featuresConfiguration": {
+                "inlayHint": {
+                "implicitHashValue": true,
+                "implicitRescue": true
+                }
+            },
+            "formatter": "auto",
+            "linters": [],
+            "experimentalFeaturesEnabled": false
+            },
+            "filetypes": ["ruby"],
+        }
+    }
     ```
 
 ### Terminal related
