@@ -63,7 +63,6 @@ Plug 'junegunn/fzf.vim'
 
 " Development Tools
 Plug 'dense-analysis/ale'
-Plug 'ervandew/supertab'
 Plug 'vim-test/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'pbrisbin/vim-mkdir'
@@ -214,13 +213,6 @@ nnoremap <C-l> <C-w>l
 
 " Switch between last two files
 nnoremap <Leader><Leader> <C-^>
-
-" Tab Management
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
-map <leader>t<leader> :tabnext<cr>
 
 " Testing
 nnoremap <silent> <Leader>t :TestFile<CR>
