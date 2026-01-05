@@ -148,6 +148,10 @@ endif
 
 " Coc Configuration
 " https://github.com/neoclide/coc.nvim?tab=readme-ov-file#example-vim-configuration
+
+" Performance tuning
+set updatetime=500                       " Balanced update time (default: 4000ms)
+
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ CheckBackspace() ? "\<Tab>" :
