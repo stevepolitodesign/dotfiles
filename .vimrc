@@ -99,6 +99,9 @@ call plug#end()
 " ===================
 
 " ALE Configuration
+let g:ale_disable_lsp = 1           " Disable ALE's LSP (Coc handles it)
+let g:ale_completion_enabled = 0    " Disable ALE completion (Coc handles it)
+
 function! SetRubyLinter()
   " Look for .rubocop.yml in current directory or parent directories
   let rubocop_config = findfile('.rubocop.yml', '.;')
@@ -159,6 +162,29 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+" Coc LSP Keybindings
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gi <Plug>(coc-implementation)
+
+" Show documentation
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" Rename symbol
+nmap <leader>rn <Plug>(coc-rename)
+
+" Navigate diagnostics
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Theme Configuration
 set background=dark
