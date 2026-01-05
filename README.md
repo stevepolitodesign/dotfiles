@@ -15,7 +15,7 @@
     ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    brew install openssl@3 libyaml gmp rust gh mise fzf bat ripgrep the_silver_searcher perl universal-ctags
+    brew install openssl@3 libyaml gmp rust gh mise fzf bat ripgrep the_silver_searcher perl
     ```
 
 3. Install Ruby and Node globally with Mise
@@ -35,7 +35,6 @@
 
 -   https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
 -   https://formulae.brew.sh/formula/the_silver_searcher
--   https://formulae.brew.sh/formula/ctags#default
 -   https://formulae.brew.sh/formula/fzf#default
 -   https://github.com/neoclide/coc.nvim
 -   https://github.com/neoclide/coc.nvim/wiki/Language-servers#using-shopifyruby-lsp
