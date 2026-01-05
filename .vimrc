@@ -65,6 +65,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'ervandew/supertab'
 Plug 'vim-test/vim-test'
+Plug 'tpope/vim-dispatch'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'preservim/nerdtree'
 
@@ -133,7 +134,7 @@ let g:ale_fixers = {
 let g:ale_linters = {'ruby': ['rubocop']}
 
 " vim-test Configuration
-let test#strategy = "vimterminal"
+let test#strategy = "dispatch"
 
 " FZF Configuration
 if executable('ag')
