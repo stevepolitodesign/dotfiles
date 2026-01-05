@@ -60,7 +60,6 @@
                 "completion": true,
                 "definition": true,
                 "diagnostics": true,
-                "documentHighlights": true,
                 "documentLink": true,
                 "documentSymbols": true,
                 "foldingRanges": true,
