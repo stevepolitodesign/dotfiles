@@ -101,21 +101,28 @@ call plug#end()
 let g:ale_disable_lsp = 1           " Disable ALE's LSP (Coc handles it)
 let g:ale_completion_enabled = 0    " Disable ALE completion (Coc handles it)
 
+" Set defaults to StandardRB
+let g:ale_linters = {'ruby': ['standardrb']}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'ruby': ['standardrb'],
+\}
+
 function! SetRubyLinter()
   " Look for .rubocop.yml in current directory or parent directories
   let rubocop_config = findfile('.rubocop.yml', '.;')
 
   if !empty(rubocop_config)
     " Project has RuboCop config - use RuboCop
-    let g:ale_linters = {'ruby': ['rubocop']}
-    let g:ale_fixers = {
+    let b:ale_linters = {'ruby': ['rubocop']}
+    let b:ale_fixers = {
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
     \   'ruby': ['rubocop'],
     \}
   else
     " No RuboCop config - use StandardRB
-    let g:ale_linters = {'ruby': ['standardrb']}
-    let g:ale_fixers = {
+    let b:ale_linters = {'ruby': ['standardrb']}
+    let b:ale_fixers = {
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
     \   'ruby': ['standardrb'],
     \}
@@ -127,13 +134,6 @@ augroup RubyLinterDetection
   autocmd!
   autocmd BufRead,BufNewFile *.rb,*.rake,Gemfile call SetRubyLinter()
 augroup END
-
-" Set initial default
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'ruby': ['rubocop'],
-\}
-let g:ale_linters = {'ruby': ['rubocop']}
 
 " vim-test Configuration
 let test#strategy = "dispatch"
