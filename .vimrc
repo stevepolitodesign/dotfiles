@@ -102,7 +102,7 @@ let g:ale_disable_lsp = 1           " Disable ALE's LSP (Coc handles it)
 let g:ale_completion_enabled = 0    " Disable ALE completion (Coc handles it)
 
 " Set defaults to StandardRB
-let g:ale_linters = {'ruby': ['standardrb']}
+let g:ale_linters = {'ruby': ['standardrb'], 'markdown': []}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'ruby': ['standardrb'],
@@ -114,14 +114,14 @@ function! SetRubyLinter()
 
   if !empty(rubocop_config)
     " Project has RuboCop config - use RuboCop
-    let b:ale_linters = {'ruby': ['rubocop']}
+    let b:ale_linters = {'ruby': ['rubocop'], 'markdown': []}
     let b:ale_fixers = {
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
     \   'ruby': ['rubocop'],
     \}
   else
     " No RuboCop config - use StandardRB
-    let b:ale_linters = {'ruby': ['standardrb']}
+    let b:ale_linters = {'ruby': ['standardrb'], 'markdown': []}
     let b:ale_fixers = {
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
     \   'ruby': ['standardrb'],
