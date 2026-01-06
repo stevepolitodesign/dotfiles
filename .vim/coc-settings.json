@@ -1,0 +1,8 @@
+{
+  "languageserver": {
+    "ruby-lsp": {
+      "command": "ruby-lsp",
+      "filetypes": ["ruby"]
+    }
+  }
+}

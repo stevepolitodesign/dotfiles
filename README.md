@@ -31,13 +31,23 @@
     npm install -g corepack
     ```
 
+5. Install [ruby-lsp][ruby-lsp]
+
+    ```
+    gem install ruby-lsp
+    ```
+
 ### Vim related
 
 -   https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
 -   https://formulae.brew.sh/formula/the_silver_searcher
 -   https://formulae.brew.sh/formula/fzf#default
 -   https://github.com/neoclide/coc.nvim
--   https://github.com/neoclide/coc-solargraph
+
+Within Vim, run the following:
+
+1. `:PlugInstall` to install plugins.
+2. `:CocInstall` to install language servers.
 
 ### Terminal related
 
@@ -126,3 +136,4 @@ fatal: Authentication failed for 'https://github.com/stevepolitodesign/dotfiles.
 [token]: https://github.com/settings/tokens
 [yarn]: https://yarnpkg.com/getting-started/install
 [ssh-agent]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
+[ruby-lsp]: https://rubygems.org/gems/ruby-lsp
