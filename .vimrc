@@ -119,6 +119,7 @@ function! SetRubyLinter()
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
     \   'ruby': ['rubocop'],
     \}
+    let b:ale_fix_on_save = 1
   else
     " No RuboCop config - use StandardRB
     let b:ale_linters = {'ruby': ['standardrb'], 'markdown': []}
@@ -126,6 +127,7 @@ function! SetRubyLinter()
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
     \   'ruby': ['standardrb'],
     \}
+    let b:ale_fix_on_save = 1
   endif
 endfunction
 
