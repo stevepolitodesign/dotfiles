@@ -15,6 +15,8 @@ set autowrite                           " Automatically write before running com
 set backspace=indent,eol,start          " Intuitive backspace behavior
 set hidden                              " Allow hidden buffers
 set incsearch                           " Incremental search
+set ignorecase                          " Case-insensitive search...
+set smartcase                           " ...unless pattern contains uppercase
 set lbr                                 " Linebreak on 80 characters
 set mouse=a                             " Enable mouse support
 set number                              " Show line numbers
@@ -37,8 +39,7 @@ set noswapfile
 set nowb
 
 " Indentation settings
-set ai                                  " Auto indent
-set si                                  " Smart indent
+set smartindent                         " Smart indent
 set wrap                                " Wrap lines
 
 " Visual Settings
@@ -247,7 +248,6 @@ map <leader>x :e ~/scratchpad.md<cr>
 " NERDTree
 " https://github.com/preservim/nerdtree?tab=readme-ov-file#how-can-i-map-a-specific-key-or-shortcut-to-open-nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
