@@ -139,13 +139,7 @@ augroup RubyLinterDetection
 augroup END
 
 " vim-test Configuration
-let test#strategy = "vimterminal"
-
-augroup vim_test_focus
-  autocmd!
-  " Return focus to the test file after the terminal window opens
-  autocmd TerminalOpen * wincmd p
-augroup END
+let test#strategy = "dispatch"
 
 " FZF Configuration
 if executable('ag')
