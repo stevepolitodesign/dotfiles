@@ -1,7 +1,8 @@
 {
   "languageserver": {
     "ruby-lsp": {
-      "command": "ruby-lsp",
+      "command": "mise",
+      "args": ["x", "--", "ruby-lsp"],
       "filetypes": ["ruby"]
     }
   }

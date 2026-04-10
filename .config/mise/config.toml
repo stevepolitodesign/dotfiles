@@ -1,0 +1,6 @@
+[tools]
+node = "latest"
+ruby = { version = "latest", postinstall = "gem install ruby-lsp" }
+
+[settings]
+idiomatic_version_file_enable_tools = ["rub"]
