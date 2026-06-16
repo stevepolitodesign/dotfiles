@@ -36,6 +36,11 @@
     ```
     gem install ruby-lsp
     ```
+6. Install [tmux][tmux]
+
+    ```
+    brew install tmux
+    ```
 
 ### Vim related
 
@@ -136,3 +141,4 @@ fatal: Authentication failed for 'https://github.com/stevepolitodesign/dotfiles.
 [yarn]: https://yarnpkg.com/getting-started/install
 [ssh-agent]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
 [ruby-lsp]: https://rubygems.org/gems/ruby-lsp
+[tmux]: https://github.com/tmux/tmux/wiki
