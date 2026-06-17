@@ -198,6 +198,14 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Theme Configuration
+" Enable 24-bit truecolor so Dracula matches the terminal (nvim/LazyVim does
+" this automatically; plain vim does not). The t_8f/t_8b sequences are needed
+" for truecolor to pass through tmux.
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 set background=dark
 colorscheme dracula
 
