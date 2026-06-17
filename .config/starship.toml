@@ -1,0 +1,12 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# The default git_status ahead/behind/deleted markers use plain Unicode symbols
+# (⇡ ⇣ ✘) that aren't in Hack Nerd Font, so the terminal renders them
+# with a mismatched fallback font (or tofu — ✘ is missing entirely). These use
+# Nerd Font private-use glyphs, which render from Hack Nerd Font like the branch icon.
+[git_status]
+ahead = ""
+behind = ""
+diverged = ""
+deleted = ""
+stashed = " ${count}"
