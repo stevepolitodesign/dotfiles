@@ -13,6 +13,7 @@ set autoindent                          " Minimal automatic indenting for any fi
 set autoread                            " Auto-reload files changed outside vim
 set autowrite                           " Automatically write before running commands
 set backspace=indent,eol,start          " Intuitive backspace behavior
+set clipboard=unnamed                   " Yank straight to the system clipboard
 set hidden                              " Allow hidden buffers
 set incsearch                           " Incremental search
 set ignorecase                          " Case-insensitive search...
